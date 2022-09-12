@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Homepage</title>
+</head>
+<style>
+    @import url('https://fonts/.googleapis.com/css2?family=poppins');
+
+*{
+    font-family: 'poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #601cfc;
+}
+header{
+    background-color: white;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 200px;
+
+}
+.logo{
+    text-decoration: none;
+    color: blue;
+    text-transform: uppercase;
+    font-weight:700;
+    font-size: 1.8em;
+}
+.navigation a{
+    color: #3a6cf4;
+    text-decoration: none;
+    font-size:1.1em;
+    font-weight: 500;
+    padding-left: 30px;
+}
+.navigation a:hover{
+    color: #601cfc;
+}
+section{
+    padding: 100px 200px;
+}
+.main{
+    width: 100%;
+    min-height:100vh;
+    display: flex;
+    align-items: center;
+    background-color: url(v.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.main h2{
+    color: white;
+    font-size: 1.4em;
+    font-weight: 500;
+}
+.main h2 span{
+    display: inline-block;
+    margin-top: 10px;
+    color: blue;
+    font-size: 3em;
+    font-weight: 600;
+}
+.main h3{
+    color: white;
+    font-weight: 700;
+    font-size: 2em;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 30px;    
+}
+.main-btn{
+    color: white;
+    background-color: #3a6cf4;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 600;
+    display: inline-block;
+    padding: 0.9375em 2.1875em;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+
+}
+.main-btn:hover{
+    background-color: #0a49f6;
+    transform: scale(1.1, 1.1);
+}
+.social-icons a{
+    color: white;
+    font-size: 1.7em;
+    padding-right: 30px;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    flex-direction: row         ;
+    font-size: 40px;
+    color: white;
+}
+h3{
+    color:white;
+    text-align: center;
+}
+
+p{
+    color:white;
+    text-align: center;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+h3{
+    color: black;
+    text-align: center;
+}
+p{
+    color: black;
+    text-align: center;
+}
+.card{
+    background-color: white;
+    width: 21.25em;
+    box-shadow: 0 5px 25px black (1 1 1 / 15% );
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px;
+    transition: 0.7s ease;
+}
+.card:hover{
+    transform: scale(1.1);
+}
+.card.icon{
+    column-rule: darkblue;
+    font-size: 8em;
+    text-align: center;
+}
+.icon{
+    color: #3a6cf4;
+    font-size: 8em;
+    text-align: center;
+}
+.info{
+    text-align: center;
+}
+.info h3{
+    color: #3a6cf4;
+    font-size: 1.2em;
+    font-weight: 700;
+    margin: 10px;
+} 
+.projects{
+    background-color: #6dc4f6;
+}
+.projects .content{
+    margin-top: 30px;
+}
+.project-card {
+    background-color: whitesmoke;
+    border: 1px solid white;
+    min-height: 14em;
+    width: 23em;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 20px;
+    transition: 0.7s ease;
+}
+
+.projects-card:hover .project-images{
+    opacity: 0.9;
+}
+
+.project-images img{.
+    width: 100%;
+    
+}
+.project-info{
+    padding: 1em;
+}
+
+.project-category{
+    font-size: 0.8em;
+    color: black;
+}
+
+.project-title{
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-top: 10px;
+}
+
+.more-details{
+    text-decoration: none;
+    color: #0a49f6;
+}
+
+.more-details:hover {
+    color: #3a6cf4;
+}
+
+h3{
+    font-size:20px ;
+}
+
+.card{
+    margin-left: 30%;
+}
+
+.contact .icon{
+    font-size: 4.5em;
+}
+
+.contact .info h3{
+    color: black;
+}
+
+.contact .info{
+    font-size: 1.5em;
+}
+
+.footer{
+    background-color: black;
+    color: aliceblue;
+    padding: 0.3em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-title{
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+.footer-title span{
+    color: #3a6cf4;
+}
+
+.footer .social-icons a{
+    font-size: 1.3em;
+    padding: 0 12px 0 0;
+}
+
+@media(max-width:1023px){
+    header(
+        padding: 12px 20px;
+    )
+
+    .navigation a{
+        padding-left:10px;
+    }
+
+    .title{
+        font-size: 1.8em;
+    }
+
+    section{
+        padding: 80px 20px;  
+    }
+
+    .main-content h2{
+        font-size: 1em;
+    }
+
+    .main-content h3{
+        font-size: 1.6em;
+    }
+
+    .content{
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+@media (max-width:641px){
+    body{
+        font-size:12px;
+    }
+
+    .main-content h2{
+        font-size: 0.6em;
+    }
+    
+    .main-content h3{
+        font-size: 1.4em;
+    }
+}
+
+@media(max-width:300px){
+    body{
+        font-size:10px;         
+    }
+}
+</style>
+<body>
+    <header>                    
+     <a href="#" class="logo">happiness website</a>
+        <nav class="navigation">
+            <a href="#services">Services</a>
+            <a href="#projects">Projects</a>
+            <a href="#contacts">Contacts</a>
+        </nav>
+    </header>
+    <section class="main">
+        <div>
+       <h2>Hello am happiness<br><span style="color:white ;">Coding Expert</span> </h2>
+            <h3>I create a lot of beautiful designs</h3>
+            <a href="#projects" class="main-btn">view my work</a>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </section>
+    <section class="cards" id="services">
+        <h2 class="title">Services</h2>
+        <div class="content">
+            <div class="card">
+                <div class="icon">
+                    <i class="fas fa-edit"></i>
+                </div>
+                <div class="info">
+                    
+                    <h3>Code Writing</h3>
+                    <p>Dealing with the CSS and HTML Language 
+                        andb web Language to degin the bests of websites
+                    </p>
+                 </div>
+
+                </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="content">
+            <div class="card">
+                <div class="icon">
+                    <i class="fas fa-edit"></i>
+                </div>
+                <div class="info">
+                    
+                    <h3>PHP & JQUERY</h3>
+                    <p>more on codeing and video making ,html, css and  animation.
+                    </p>
+                 </div>
+
+                </div>
+                </div>
+
+            </div>
+        </div><div class="content">
+            <div class="card">
+                <div class="icon">
+                    <i class="fas fa-edit"></i>
+                </div>
+                <div class="info">
+                    
+                    <h3>video</h3>
+                    <p>creating the best videos and animation ever
+                    </p>
+                 </div>
+
+                </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section>
+        <section class="project" id="projects">
+            <h2 class="title"> projects </h2>
+            <div class="content">
+                <div class="project-card">
+                    <div class="project-images">
+                        <img src=" images/a.jpg " >
+                        
+                    </div>
+                    <div class="project-info">
+                        <p class="project-category"> Code writeing & html learning</p>
+                        <strong class="project-title">
+                            <span> Sign Up Form</span>
+                            <a href="vgb.html" class="more-details">more-details</a>
+                        </strong>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <section class="cards contacts" id="contacts">
+        <h2 class="title">lets work together</h2>
+        <div class="card">
+            <div class="icon"> 
+                <i class="fas fa-phone "></i>
+            </div>
+            <div class="info">
+                <h3>Phone Number</h3>
+                <p>090588390</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="icon"> 
+                <i class="fas fa-envelope"></i>
+            </div>
+            <div class="info">
+                <h3>Email</h3>
+                <p>flourishabisola987@gmail.com</p>
+            </div>
+        </div>
+  
+    </section>
+</section>
+<footer class="footer">
+        <p class="footer title" style="font-size:10px ;">&copy  2022   <span>Happiness & Flucky Tech</span></p>
+</footer>
+</body>
+</html>
